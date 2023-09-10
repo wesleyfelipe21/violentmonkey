@@ -1,7 +1,10 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
+    branches:
+      - fix/amo
     tags:
       - v*
 
@@ -68,7 +71,7 @@ jobs:
             node scripts/amo-upload.mjs
           else
             echo Publish unlisted version
-            BETA=1 node scripts/amo-upload.mjs
+            DEBUG=amo-upload BETA=1 node scripts/amo-upload.mjs
           fi
         env:
           AMO_KEY: ${{ secrets.AMO_KEY }}

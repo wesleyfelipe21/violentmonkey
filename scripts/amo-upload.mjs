@@ -1,6 +1,6 @@
 import { rename, writeFile } from 'fs/promises';
 import { join } from 'path';
-import { signAddon } from 'amo-upload';
+import { FatalError, signAddon } from 'amo-upload';
 import { readManifest, buildUpdatesList } from './manifest-helper.js';
 import { getVersion, isBeta } from './version-helper.js';
 import { hasAsset } from './release-helper.js';
@@ -61,6 +61,10 @@ ${releaseUrl}
 }
 
 main().catch(err => {
+  if (err instanceof FatalError) {
+    // TODO send a message to Discord
+    console.log('Fatal error');
+  }
   console.error(err);
   process.exitCode = 1;
 });
