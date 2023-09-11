@@ -110,6 +110,9 @@ buttonVacuumed:
 buttonVacuuming:
   description: Message shown when data vacuum is in progress.
   message: Брисање података...
+confirmManualUpdate:
+  description: Confirm message shown when clicking update button for a single script.
+  message: ''
 confirmNotSaved:
   description: Confirm message shown when there are unsaved script modifications.
   message: |-
@@ -155,6 +158,9 @@ editNavSettings:
   message: Подешавања
 editNavValues:
   description: Label of values tab in script editor.
+  message: ''
+editReadonly:
+  description: Text of the warning when opening an auto-updated script in the editor.
   message: ''
 editValueAll:
   description: Button to show/edit the entire script value storage.

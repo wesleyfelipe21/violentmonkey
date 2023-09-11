@@ -110,6 +110,9 @@ buttonVacuumed:
 buttonVacuuming:
   description: Message shown when data vacuum is in progress.
   message: 데이터를 청소하는 중...
+confirmManualUpdate:
+  description: Confirm message shown when clicking update button for a single script.
+  message: ''
 confirmNotSaved:
   description: Confirm message shown when there are unsaved script modifications.
   message: |-
@@ -161,6 +164,9 @@ editNavSettings:
 editNavValues:
   description: Label of values tab in script editor.
   message: 값
+editReadonly:
+  description: Text of the warning when opening an auto-updated script in the editor.
+  message: ''
 editValueAll:
   description: Button to show/edit the entire script value storage.
   message: ''

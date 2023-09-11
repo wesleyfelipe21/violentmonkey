@@ -110,6 +110,11 @@ buttonVacuumed:
 buttonVacuuming:
   description: Message shown when data vacuum is in progress.
   message: Säubere Daten...
+confirmManualUpdate:
+  description: Confirm message shown when clicking update button for a single script.
+  message: |-
+    Auto-Update ist für dieses Skript deaktiviert!
+    OK klicken, um es dennoch zu aktualisieren.
 confirmNotSaved:
   description: Confirm message shown when there are unsaved script modifications.
   message: |-
@@ -170,6 +175,11 @@ editNavSettings:
 editNavValues:
   description: Label of values tab in script editor.
   message: Werte
+editReadonly:
+  description: Text of the warning when opening an auto-updated script in the editor.
+  message: >-
+    Um das Bearbeiten zu ermöglichen, deaktivieren Sie Aktualisierungen im
+    Einstellungen-Tab und klicken Sie "Speichern".
 editValueAll:
   description: Button to show/edit the entire script value storage.
   message: Alles
